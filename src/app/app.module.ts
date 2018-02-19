@@ -9,7 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { MyGalleriesComponent } from './my-galleries/my-galleries.component';
 import { CreateNewGalleryComponent } from './create-new-gallery/create-new-gallery.component';
 import { AllGalleriesComponent } from './all-galleries/all-galleries.component';
-import { AppRoutingModule } from '../app/app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({

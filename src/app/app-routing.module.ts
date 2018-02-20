@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { MyGalleriesComponent } from './my-galleries/my-galleries.component';
-import { CreateNewGalleryComponent } from './create-new-gallery/create-new-gallery.component';
-import { AllGalleriesComponent } from './all-galleries/all-galleries.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { MyGalleriesComponent } from './components/my-galleries/my-galleries.component';
+import { CreateNewGalleryComponent } from './components/create-new-gallery/create-new-gallery.component';
+import { AllGalleriesComponent } from './components/all-galleries/all-galleries.component';
 
 const appRoutes: Routes = [
   {

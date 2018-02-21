@@ -1,11 +1,3 @@
 <h2>All Galleries</h2>
 
-
-<hr>
-<ul *ngFor='let gallery of galleries' class=bg-info>
-  <h2><a routerLink='/galleries/{{gallery.id}}'>Gallery Name: {{gallery.name}}</a></h2>
-  <p>Gallery Description: {{gallery.description}}</p>
-  <img src="{{gallery.images_url}}" width='500px'>
-  <p>Author: {{gallery.user_id}}</p>
-  <hr>
-</ul>
+<div class='bg-info' *ngFor='let gallery of galleries' [galleryRow]='gallery'></div>

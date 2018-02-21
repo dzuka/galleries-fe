@@ -1,23 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '../shared/shared.module';
-import { SearchInputComponent } from '../components/search-input/search-input.component';
-import { SearchPageGalleryComponent } from '../components/search-page-gallery/search-page-gallery.component';
+import { GalleryService } from './services/gallery.service';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http/src/client';
 import { FormsModule } from '@angular/forms';
+import { AuthService } from '../shared/services/auth.service';
+import { GalleryRowComponent } from '../components/gallery-row/gallery-row.component';
+import { RouterModule, Routes } from '@angular/router';
+import { GalleryResolver } from './resolvers/gallery.resolver';
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule,
-    FormsModule
+    HttpModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule
+  ],
+  providers: [
+    GalleryService,
+    AuthService,
+    GalleryResolver
   ],
   declarations: [
-    SearchInputComponent,
-    SearchPageGalleryComponent
+    GalleryRowComponent
   ],
   exports: [
-    SearchInputComponent,
-    SearchPageGalleryComponent
+    GalleryRowComponent
   ]
 })
-export class SearchModule { }
+export class SharedModule { }

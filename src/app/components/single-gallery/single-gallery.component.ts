@@ -17,9 +17,12 @@ export class SingleGalleryComponent implements OnInit {
 }
 
 public ngOnInit() {
+  console.log('prvo', this.gallery);
+
   this.route.data
       .subscribe((data: { gallery: Gallery }) => {
           this.gallery = data.gallery;
+          console.log(this.gallery, data);
       });
 }
 

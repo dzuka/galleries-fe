@@ -14,6 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { SingleGalleryComponent } from './components/single-gallery/single-gallery.component';
 import { GalleryRowComponent } from './components/gallery-row/gallery-row.component';
+import { SearchPageGalleryComponent } from './components/search-page-gallery/search-page-gallery.component';
+import { SearchInputComponent } from './components/search-input/search-input.component';
+import { SearchModule } from './search/search.module';
 
 
 
@@ -27,7 +30,9 @@ import { GalleryRowComponent } from './components/gallery-row/gallery-row.compon
     CreateNewGalleryComponent,
     AllGalleriesComponent,
     SingleGalleryComponent,
-    GalleryRowComponent
+    GalleryRowComponent,
+    SearchPageGalleryComponent,
+    SearchInputComponent
   ],
   imports: [
     BrowserModule,

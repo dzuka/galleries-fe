@@ -9,6 +9,8 @@ import { AuthService } from '../shared/services/auth.service';
 import { GalleryRowComponent } from '../components/gallery-row/gallery-row.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryResolver } from './resolvers/gallery.resolver';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import { GalleryResolver } from './resolvers/gallery.resolver';
     HttpModule,
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [
     GalleryService,

@@ -41,7 +41,8 @@ import { SingleUserComponent } from './components/single-user/single-user.compon
     AppRoutingModule,
     SharedModule,
     FormsModule,
-    SearchModule
+    SearchModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

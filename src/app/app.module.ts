@@ -17,6 +17,7 @@ import { GalleryRowComponent } from './components/gallery-row/gallery-row.compon
 import { SearchPageGalleryComponent } from './components/search-page-gallery/search-page-gallery.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
 import { SearchModule } from './search/search.module';
+import { SingleUserComponent } from './components/single-user/single-user.component';
 
 
 
@@ -32,13 +33,15 @@ import { SearchModule } from './search/search.module';
     SingleGalleryComponent,
     GalleryRowComponent,
     SearchPageGalleryComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    SingleUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    SearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

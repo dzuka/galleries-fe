@@ -11,6 +11,7 @@ import { AllGalleriesComponent } from './components/all-galleries/all-galleries.
 import { SearchPageGalleryComponent } from './components/search-page-gallery/search-page-gallery.component';
 import { SingleGalleryComponent } from './components/single-gallery/single-gallery.component';
 import { GalleryResolver } from './shared/resolvers/gallery.resolver';
+import { SingleUserComponent } from './components/single-user/single-user.component';
 
 const appRoutes: Routes = [
   {
@@ -31,7 +32,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'create',
-    component: CreateNewGalleryComponent
+    component: CreateGalleryComponent
   },
   {
     path: 'galleries/search/:term',
@@ -42,6 +43,11 @@ const appRoutes: Routes = [
     component: SingleGalleryComponent,
     resolve: {
       gallery: GalleryResolver
+    }
+  },
+  {
+    path: 'authors',
+    component: SingleUserComponent
   }
 ]
 

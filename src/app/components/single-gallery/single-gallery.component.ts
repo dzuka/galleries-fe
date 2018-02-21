@@ -9,7 +9,7 @@ import { Gallery } from '../../shared/models/gallery.model';
 })
 export class SingleGalleryComponent implements OnInit {
 
-  private gallery: Gallery;
+  public gallery: Gallery;
 
   constructor(
     private route: ActivatedRoute,
@@ -17,7 +17,6 @@ export class SingleGalleryComponent implements OnInit {
 }
 
 public ngOnInit() {
-  console.log('prvo', this.gallery);
 
   this.route.data
       .subscribe((data: { gallery: Gallery }) => {

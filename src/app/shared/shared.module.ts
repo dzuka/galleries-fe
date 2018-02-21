@@ -27,7 +27,8 @@ import { GalleryResolver } from './resolvers/gallery.resolver';
     GalleryRowComponent
   ],
   exports: [
-    GalleryRowComponent
+    GalleryRowComponent,
+    
   ]
 })
 export class SharedModule { }

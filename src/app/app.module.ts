@@ -14,7 +14,7 @@ import { SharedModule } from './shared/shared.module';
 import { SingleGalleryComponent } from './components/single-gallery/single-gallery.component';
 import { SearchModule } from './search/search.module';
 import { SingleUserComponent } from './components/single-user/single-user.component';
-import { NgxPaginationModule } from './ngx-pagination/ngx-pagination.module';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 
 @NgModule({
@@ -28,6 +28,7 @@ import { NgxPaginationModule } from './ngx-pagination/ngx-pagination.module';
     AllGalleriesComponent,
     SingleGalleryComponent,
     SingleUserComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,6 @@ import { NgxPaginationModule } from './ngx-pagination/ngx-pagination.module';
     SharedModule,
     FormsModule,
     SearchModule,
-    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

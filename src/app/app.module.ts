@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { LoginComponent } from './components/login/login.component';
@@ -13,12 +12,9 @@ import { AllGalleriesComponent } from './components/all-galleries/all-galleries.
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { SingleGalleryComponent } from './components/single-gallery/single-gallery.component';
-import { GalleryRowComponent } from './components/gallery-row/gallery-row.component';
-import { SearchPageGalleryComponent } from './components/search-page-gallery/search-page-gallery.component';
-import { SearchInputComponent } from './components/search-input/search-input.component';
 import { SearchModule } from './search/search.module';
 import { SingleUserComponent } from './components/single-user/single-user.component';
-
+import { NgxPaginationModule } from './ngx-pagination/ngx-pagination.module';
 
 
 @NgModule({
@@ -31,10 +27,7 @@ import { SingleUserComponent } from './components/single-user/single-user.compon
     CreateNewGalleryComponent,
     AllGalleriesComponent,
     SingleGalleryComponent,
-    GalleryRowComponent,
-    SearchPageGalleryComponent,
-    SearchInputComponent,
-    SingleUserComponent
+    SingleUserComponent,
   ],
   imports: [
     BrowserModule,

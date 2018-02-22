@@ -32,7 +32,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'create',
-    component: CreateGalleryComponent
+    component: CreateNewGalleryComponent
   },
   {
     path: 'galleries/search/:term',
